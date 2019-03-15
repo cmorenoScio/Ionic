@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Components
+    </ion-title>
+    <ion-button (click)="goToComponents()" color="tertiary"> Components </ion-button>
+    <ion-button (click)="goToList()" color="primary">Lists</ion-button>
+    <ion-button (click)="goToInputs()" color="secondary">Inputs</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <ion-title padding>
+    CARD
+  </ion-title>
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Panda</ion-card-title>
+    </ion-card-header>
+    <img src="https://img.mobiscroll.com/demos/card_2.png">
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  <ion-title padding>
+    BUTTONS
+  </ion-title>
+  <ion-button expand="full">Full Button</ion-button>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="dark">Dark</ion-button>
+  <ion-title padding>
+    BADGES
+  </ion-title>
+  <ion-item>
+    <ion-badge color="dark" slot="start">11</ion-badge>
+    <ion-label>My Item</ion-label>
+    <ion-badge slot="end">22</ion-badge>
+  </ion-item>
+
+  <ion-title padding>
+    ICONS
+  </ion-title>
+  <ion-icon name="globe"></ion-icon>
+  <ion-icon name="heart-empty"></ion-icon>
+  <ion-icon name="paw"></ion-icon>
+  <ion-icon name="pizza"></ion-icon>
+
+  <ion-title padding>
+    FAB
+  </ion-title>
+
+  <ion-row text-center>
+    <ion-col>
+      <ion-fab-button>Default</ion-fab-button>
+    </ion-col>
+    <ion-col>
+      <ion-fab-button color="primary">Primary</ion-fab-button>
+    </ion-col>
+    <ion-col>
+      <ion-fab-button color="danger">Danger</ion-fab-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

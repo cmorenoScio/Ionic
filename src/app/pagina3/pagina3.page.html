@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inputs</ion-title>
+  </ion-toolbar>
+  <ion-button (click)="goToComponents()" color="tertiary"> Components </ion-button>
+    <ion-button (click)="goToList()" color="primary">Lists</ion-button>
+    <ion-button (click)="goToInputs()" color="secondary">Inputs</ion-button>
+</ion-header>
+
+<ion-content padding>
+  <ion-list padding>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Select</ion-label>
+      <ion-select multiple="true">
+        <ion-select-option value="bird" selected>Bird</ion-select-option>
+        <ion-select-option value="cat">Cat</ion-select-option>
+        <ion-select-option value="dog" selected>Dog</ion-select-option>
+        <ion-select-option value="honeybadger">Honey Badger</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
